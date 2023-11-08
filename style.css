@@ -349,26 +349,27 @@ footer {
     p {
       font-size: 16px;
     }
+    .shp{
+        display: none;
+      }
+      .flex-between{
+        width: 100%;
+      }
+      .searched-meals{
+        display: flex;
+        flex-direction: column;
+      }
+      .randomDishName{
+        font-size: 2em;
+      }
+      #special{
+        font-size: 1em;
+      }
+      #why{
+        min-height: 700px;
+      }
   }
-  .shp{
-    display: none;
-  }
-  .flex-between{
-    width: 100%;
-  }
-  .searched-meals{
-    display: flex;
-    flex-direction: column;
-  }
-  .randomDishName{
-    font-size: 2em;
-  }
-  #special{
-    font-size: 1em;
-  }
-  #why{
-    min-height: 700px;
-  }
+
   @media (max-width: 480px) {
     h1 {
       font-size: 2em;
