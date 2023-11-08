@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Rhapsody</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body id="main">
+
+    <header id="home">
+      <nav class="text-white">
+        <div class="container">
+          <img src="assets\Recipe Rhapsody-logos_transparent.png" width="100px" alt="">
+          <div class="flex-between">
+          <div><a class="text-white s" href="#home">HOME</a></div>
+          <div><a class="text-white s" href="#about">ABOUT</a></div>
+          <div><a class="text-white s" href="#special">SPECIAL</a></div>
+        </div>
+        <div class="button" id="n">
+          <a
+            class="text-white"
+            href="#why"
+            ><b>SEARCH</b></a
+          >
+        </div>
+        </div>
+
+      </nav>
+      <h1 id="top">THE Best Recipies </h1><h1 id="top">Just 1 Search</h1><h1 id="top"> Away!</h1>
+      <p id="about">Search from here some of the best and delicious website from all around the world. Don't know what to choose? <br> Cick away 'Special'</p>
+    </header>
+
+
+
+    <div class="middle" id="why">
+      <img class="shp" id="shpe1" src="assets\images\shape-1.png" alt="">
+      <img class="shp" id="shpe2" src="assets\images\shape-2.png" alt="">
+      <img class="shp" id="shpe3" src="assets\images\shape-5.png" alt="">
+      <img class="shp" id="shpe4" src="assets\images\shape-4.png" alt="">
+
+
+
+      <h1>SEARCH YOUR CATEGORY</h1>
+    <input type="text"class="searchInput" placeholder="Eg. Seafood, Vegan " id="usernameField" required="required">
+    <button class="serch"><a href="#results">SEARCH</a> </button>
+    <section class="random-meal">
+      <h6 id="special" >SPECIAL DISH</h6>
+
+      <!-- <div class="randomDishes">
+        <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2022/05/amritsari-chole-3-500x375.jpg" alt=""> -->
+        <!-- <h2 class="randomDishName">DISH NAME</h2>
+        </div> -->
+    </section>
+
+    </div>
+    <div class="searchs-results" id="results">
+      <img class="shp" id="shpe5" src="assets\images\shape-2.png" alt="">
+      <img class="shp" id="shpe6" src="assets\images\shape-4.png" alt="">
+      <img class="shp" id="shpe7" src="assets\images\shape-5.png" alt="">
+
+
+
+    <h3 id="search-results">Searched Meals</h3>
+    <section class="searched-meals">
+      <!-- Meals will be inserted here -->
+    </section>
+    <div class="ingredient-modal">
+      <!-- Ingredients will be inserted here -->
+    </div>
+  </div>
+  <footer>
+    <div id="credits" class="text-white">
+      <h3>Made with 💛 by MELVIN</h3> <br>
+      <h4>KALVIUM</h2>
+    </div>
+  </footer>
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+  integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+  integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+  <script src="app.js"></script>
+</html>

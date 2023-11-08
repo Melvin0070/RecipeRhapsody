@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;   
+    text-align: center;
+}
+
+
+h1{
+    font-size: 5em;
+    font-family: 'Cinzel Decorative', serif;
+
+}
+p {
+  font-size: 25px;
+  padding: 0% 20%;
+}
+
+.text-white {
+  color: white;
+}
+
+nav{
+  background-color: none;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.flex-between{
+    margin-left: 60px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.s{
+    padding: 1em 1.5em;
+    color: #fff5f5;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+}
+.s::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #E4C590;
+    transition: .5s ease;
+}
+.s:hover{
+    /* transition-delay: .5s; */
+    color: #E4C590;
+}
+.s:hover::before{
+    width: 100%;
+}
+
+.container {
+  width: 100%;
+  align-items:center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+  
+}
+
+#n {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+    color: #0E0D0C;
+    transition: ease-out 0.5s;
+    border: 2px solid #E4C590;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 0 #E4C590;
+
+}
+#n:hover{
+    color: rgb(0, 0, 0);
+    box-shadow: inset 0 -100px 0 0 #E4C590;
+}
+.button:active{
+    transform: scale(0.7);
+}
+
+a {
+  text-decoration: none;
+}
+
+#home {
+    background-image: url(https://imageupload.io/ib/M8PTfXeQ3WWTOEW_1699354386.jpg);
+    background-size: 100% 100%;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    /* position: relative; */
+}
+#home p{
+    padding-top: 80px;
+}
+.middle img {
+  width: 20%;
+}
+/* #home nav{
+    position: absolute;
+} */
+
+
+.middle {
+  min-height: 100vh;
+  background-color: #0E0D0C;
+  position: relative;
+}
+.middle h1{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 3em;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.shp{
+    position: absolute;
+
+}
+#shpe1{
+    left: 0;
+    width: 200px;
+}
+#shpe2{
+    right: 0;
+}
+#shpe3{
+    left: 0;
+
+    margin-top: 400px;
+    left: 0;
+    width: 500px;
+}
+#shpe4{
+    right: 0;
+    width: 200px;
+    margin-top: 600px;
+}
+#shpe5{
+    left: 0;
+}
+#shpe6{
+    margin-top: 450px;
+    left: 0;
+}
+#shpe7{
+    width: 500px;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 150px;
+
+}
+
+  
+#usernameField {
+    width: 400px;
+    height: 40px;
+    background-color: #292929;
+    border-radius: 30px;
+    border: 2px solid #292929;
+    padding: 0px 12px;
+    outline: none;
+    caret-color: #E4C590;
+    color: rgb(212, 212, 212);
+    font-size: 12px;
+    transition-duration: .2s;
+}
+  
+#usernameField:focus
+   {
+    border: 2px solid #E4C590;
+    transition-duration: .2s;
+}
+.serch{
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 7px 20px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: #E4C590;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #E4C590;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 0 #E4C590;
+}
+.serch:hover{
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #E4C590;
+}
+.serch:active{
+    transform: scale(0.9);
+}
+h2{
+    font-size: 5em;
+    font-family: 'Cinzel Decorative', serif;
+    color: white;
+    padding-left: 350px;
+    padding-top: 60px;
+}
+.randomDishes{
+    background-color: #161718;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content:space-evenly;
+
+}
+.randomDishName{
+    margin-top: 50px;
+    font-size: 5em;
+    font-family: 'Cinzel Decorative', serif;
+    color: white;
+}
+h6{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2em;
+    position: absolute;
+    color: #E4C590;
+    text-decoration:underline;
+    padding-left: 5em;
+}
+.searchs-results{
+    min-height: 800px;
+    background-color: #161718;
+
+}
+#search-results{
+    text-align: center;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 4em;
+    padding-top: 50px;
+    color: white;
+
+}
+
+
+#credits h3{
+    text-align: center;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2.5em;
+}
+#credits h4{
+    font-family: 'Cinzel Decorative', serif;
+    color: #E4C590;
+    font-size: 1.5em;
+}
+footer {
+  background-color: #0E0D0C;
+  min-height: 100px;
+  padding: 10% 0%;
+}
+.ingredient-modal {
+  position: fixed;
+  top: 30%;
+  left: 27.5%;
+  margin: auto;
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.98);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.ingredient-modal h3 {
+  color: white;
+  font-size: 38px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.ingredient-modal ul {
+  list-style: none;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  text-align: center;
+}
+
+.ingredient-modal li {
+  margin-bottom: 14px;
+}
+.ingred{
+    text-decoration: underline;
+}
+.searched-meals {
+  display: grid;
+  grid-template-columns: repeat(4, 20vw);
+  padding: 20px;
+  justify-content: center;
+}
+
+.searched-meals .meal {
+  margin: 80px 20px 20px 0;
+  text-align: center;
+}
+
+.searched-meals .meal img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.searched-meals .meal h3 {
+  font-size: 2em;
+  text-align: center;
+  color: white;
+}
+.serch a {
+    color: #ffffff;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    h1 {
+      font-size: 3em;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
+  .shp{
+    display: none;
+  }
+  .flex-between{
+    width: 100%;
+  }
+  .searched-meals{
+    display: flex;
+    flex-direction: column;
+  }
+  .randomDishName{
+    font-size: 2em;
+  }
+  #special{
+    font-size: 1em;
+  }
+  #why{
+    min-height: 700px;
+  }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2em;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
