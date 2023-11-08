@@ -38,14 +38,14 @@ function locomotiveAnimation() {
 
 function loadinganimation(){
     gsap.from("#home h1",{
-        y: 100,
+        y: 50,
         opacity: 0,
         delay: 2,
         duration: 0.9,
         stagger: 0.3,
     })
     gsap.from("#home p",{
-        y: 100,
+        y: 50,
         opacity: 0,
         delay: 3,
         duration: 0.9,
