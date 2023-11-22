@@ -16,7 +16,7 @@ const showIngredientsModal = async (mealId) => {
     
     // Extract ingredients using a for loop
     const ingredients = [];
-    for (let i = 1; i <= 20; i++) { // Assuming a maximum of 20 ingredients
+    for (let i = 1; i <= 20; i++) { 
       const ingredientKey = `strIngredient${i}`;
       const ingredient = mealDetails[ingredientKey];
       if (ingredient) {
@@ -24,7 +24,7 @@ const showIngredientsModal = async (mealId) => {
       }
     }
   
-    // Appending the fetched ingredient list inside the ingredient modal section
+    // Appending the fetched ingredient
     ingredientModal.innerHTML = `
       <h3 class='ingred'>Ingredients</h3> 
       <ul>${ingredients.join('')}</ul>
@@ -69,22 +69,21 @@ window.onclick = (e) => {
 
 fetchRandomMeal();
 
-// Attach a click event to the search button (replace searchBtn with the appropriate button selector)
+// Attach a click event
 searchBtn.addEventListener("click", () => {
     const searchQuery = searchInput.value;
-    getMealList(searchQuery); // Pass the searchQuery to the function
+    getMealList(searchQuery); 
   });
   
-  // Use the 'Enter' key to trigger the search
+  // Use the Enter key to search
   searchInput.addEventListener("keypress", (event) => {
     if (event.key === "Enter") {
       const searchQuery = searchInput.value;
-      getMealList(searchQuery); // Pass the searchQuery to the function
+      getMealList(searchQuery); 
     }
   });
   
-  function getMealList(searchQuery) {
-    // Define searchQuery here
+function getMealList(searchQuery) {
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${searchQuery}`)
       .then((response) => response.json())
       .then((data) => {
