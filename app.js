@@ -44,7 +44,7 @@ async function fetchRandomMeal() {
   randomMealSection.appendChild(createMealElement(meal));
 }
 
-// Function for creating a meal-div (template)
+// Function for creating a meal-div 
 const createMealElement = (meal) => {
     const mealEl = document.createElement("div");
     mealEl.classList.add("randomDishes");
@@ -53,7 +53,7 @@ const createMealElement = (meal) => {
       <h6 id="special" >SPECIAL DISH</h6>
       <h3 class='randomDishName'>${meal.strMeal}</h3>
     `;
-    // Setting up event listener for the modal
+    // Event listener for the modal
     mealEl.addEventListener("click", () => {
       showIngredientsModal(meal.idMeal);
     });
